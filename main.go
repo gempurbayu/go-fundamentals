@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"pertama/calculation"
 	"pertama/conditional"
+	"pertama/data"
 )
 
 //untuk menjalankan func diluar package main/beda package menggunakan import
@@ -29,6 +30,9 @@ func main() {
 	age = 30
 
 	kota = "Bandung"
+
+	//conditional output
+	fmt.Println("== Conditional ==")
 	fmt.Println(name, kota, age)
 
 	usia := conditional.TestIf()
@@ -37,5 +41,12 @@ func main() {
 	fmt.Println(usia, huruf)
 
 	conditional.ForEx()
+
+	//data output
+	fmt.Println("== Data ==")
+	data.Array()
+	data.Slice()
+	data.Mapping()
+	data.SliceOfMap()
 
 }
