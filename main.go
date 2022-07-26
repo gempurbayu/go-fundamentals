@@ -49,4 +49,17 @@ func main() {
 	data.Mapping()
 	data.SliceOfMap()
 
+	fmt.Println("== Multiple Return Func ==")
+	//luas, keliling := jumlah(2, 7)
+	luas, _ := jumlah(2, 7)
+	fmt.Println(luas)
+
+}
+
+//multiple return value
+func jumlah(panjang int, lebar int) (int, int) {
+	luas := panjang * lebar
+	keliling := 2 * (panjang + lebar)
+
+	return luas, keliling
 }

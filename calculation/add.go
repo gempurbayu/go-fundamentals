@@ -1,7 +1,7 @@
 package calculation
 
 //nama func kapital artinya public bisa diakses cross package
-func Add(number int, numberTwo int) int {
+func Add(number, numberTwo int) int {
 	//return number + numberTwo
 	return min(number, numberTwo)
 }
