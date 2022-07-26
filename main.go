@@ -5,6 +5,7 @@ import (
 	"pertama/calculation"
 	"pertama/conditional"
 	"pertama/data"
+	"pertama/stucture"
 )
 
 //untuk menjalankan func diluar package main/beda package menggunakan import
@@ -53,6 +54,9 @@ func main() {
 	//luas, keliling := jumlah(2, 7)
 	luas, _ := jumlah(2, 7)
 	fmt.Println(luas)
+
+	fmt.Println("== Struct ==")
+	stucture.StructBasic()
 
 }
 
